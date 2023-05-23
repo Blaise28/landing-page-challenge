@@ -10,6 +10,11 @@ $lightGray: hsl(0, 0%, 98%);
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+*{
+  text-decoration: none !important;
+  list-style: none !important;
+}
+
 header {
   padding-top: 1rem;
   .background {

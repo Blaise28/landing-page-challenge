@@ -11851,6 +11851,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  text-decoration: none !important;
+  list-style: none !important;
+}
+
 header {
   padding-top: 1rem;
 }
