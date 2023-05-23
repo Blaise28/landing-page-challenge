@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Landing page</title>
+    <link rel="stylesheet" href="./style/dist/style.css" />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body >
+    <section class="container">
+      <header>
+      <div class="background"></div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo.svg" alt="un logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <img src="./images/icon-close.svg" alt="icon" />
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header justify-content-end">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body d-flex justify-content-evenly align-items-center">
+              <div class="links">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" >
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Carees</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Community</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+           <div>
+                <button class="btn bg-primary text-light rounded-pill px-4">Get Started</button>
+              </div>
+        </div>
+      </nav>
+
+      <main class="mt-3 row justify-content-between align-items-center mx-2">
+
+        <section class="col-5">
+          <h1 class="text-secondary title">
+            Bring everyone together to build better products.
+          </h1>
+          <p class="my-4 col-md-9 text-gray">
+            Manages makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view
+          </p>
+          <button class="btn bg-primary text-light rounded-pill px-4">Get Started</button>
+        </section>
+
+        <section class="col-5">
+          <img src="./images/illustration-intro.svg" class="img-fluid" alt="" srcset="">
+        </section>
+      </main>
+      </header>
+
+      <section class="mt-3 row justify-content-between">
+        <div class="about col-lg-5">
+          <h2 class="text-secondary">
+            What's different about Manage?
+          </h2>
+          <p class="col-md-9 text-gray">
+            Manage provides all the functionnality your team needs,
+            without the complexity. Our software is tailor-made digital product teams.
+          </p>
+        </div>
+
+        <article class="row col-lg-6">
+          <section class="d-flex mb-2">
+            <div class="number me-4">
+              <span class="px-3 py-1 rounded-pill bg-primary text-light fw-bold">01</span>
+            </div>
+            <div class="description">
+              <h5 class="title text-secondary">Track company-wide progress</h3>
+              <p class="mt-3 text-gray">
+                See how your day-to-day tasks fit into wider vision.
+                Go from tracking progress at the milestone level all the
+                way done to the smallest of details. Never lose sight of the bigger picture agian.
+              </p>
+            </div>
+          </section>
+          <section class="d-flex mb-2">
+            <div class="number me-4">
+              <span class="px-3 py-1 rounded-pill bg-primary text-light fw-bold">02</span>
+            </div>
+            <div class="description">
+              <h5 class="title text-secondary">Track company-wide progress</h3>
+              <p class="mt-3 text-gray">
+                See how your day-to-day tasks fit into wider vision.
+                Go from tracking progress at the milestone level all the
+                way done to the smallest of details. Never lose sight of the bigger picture agian.
+              </p>
+            </div>
+          </section>
+          <section class="d-flex mb-2">
+            <div class="number me-4">
+              <span class="px-3 py-1 rounded-pill bg-primary text-light fw-bold">03</span>
+            </div>
+            <div class="description">
+              <h5 class="title text-secondary">Track company-wide progress</h3>
+              <p class="mt-3 text-gray">
+                See how your day-to-day tasks fit into wider vision.
+                Go from tracking progress at the milestone level all the
+                way done to the smallest of details. Never lose sight of the bigger picture agian.
+              </p>
+            </div>
+          </section>
+        </article>
+
+      </section>
+    </section>
+
+    <section class="comments">
+      <h3 class="text-center text-secondary">What they've said</h3>
+
+      <div class="row justify-content-around mx-1 mt-5">
+        <div class="card col-lg-3 border-0 bg-light-gray pt-5">
+          <div class="profile">
+            <img class="img-fluid" style="width: 80px;" src="./images/avatar-anisha.png" alt="profile anisha">
+          </div>
+          <div class="card-body">
+            <h5 class="name text-secondary text-center">Anisha Li</h5>
+            <p class="text-center text-gray">
+              "
+              Manage has supercharged our team's workflow. The
+              maintain visibility on larger milestones at all times keeps everyone motivated.
+              "
+            </p>
+          </div>
+        </div>
+
+        <div class="card col-lg-3 border-0 bg-light-gray pt-5">
+          <div class="profile">
+            <img class="img-fluid" style="width: 80px;" src="./images/avatar-ali.png" alt="profile ali">
+          </div>
+          <div class="card-body">
+            <h5 class="name text-secondary text-center">Ali Bravo</h5>
+            <p class="text-center text-gray">
+              "
+              We have been able to cancel so many other subscriptions
+              since using Manage. There is no more cross-channel
+              confusion and everyone is much focused.
+              "
+            </p>
+          </div>
+        </div>
+
+        <div class="card col-lg-3 border-0 bg-light-gray pt-5">
+          <div class="profile">
+            <img  class="img-fluid" style="width: 80px;" src="./images/avatar-richard.png" alt="profile richard">
+          </div>
+          <div class="card-body">
+            <h5 class="name text-secondary text-center">Richard Watts</h5>
+            <p class="text-center text-gray">
+              "
+              Manage allows us to provide structure and keeps us organized and focused. I can't
+              stop them to everyone I talk to!
+              "
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-2">
+        <button class="btn bg-primary text-light rounded-pill px-4">Get Started</button>
+      </div>
+    </section>
+    <section class="team row justify-content-around bg-primary mt-5 p-5 align-items-center">
+      <div class="fw-bold col-md-5 fs-2 text-light">
+        Simplify how your team works today.
+      </div>
+      <div class="col-md-3">
+        <button class="btn bg-light text-primary rounded-pill px-4">Get Started</button>
+      </div>
+    </section>
+  </body>
+</html>

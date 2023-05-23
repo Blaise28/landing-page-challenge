@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;500;700&display=swap");
+
+$primary: hsl(12, 88%, 59%);
+$secondary: hsl(228, 39%, 23%);
+
+$grayishBlue: hsl(227, 12%, 61%);
+$dark: hsl(233, 12%, 13%);
+$light: hsl(13, 100%, 96%);
+$lightGray: hsl(0, 0%, 98%);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+header {
+  padding-top: 1rem;
+  .background {
+    position: absolute;
+    background-image: url(../../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+  }
+}
+nav {
+  .nav-link {
+    color: $secondary;
+    &:hover {
+      color: $grayishBlue;
+    }
+  }
+}
+
+main {
+  .title {
+    font-size: calc(3rem + 0.3vw);
+  }
+}
+.text-gray {
+  color: $grayishBlue;
+}
+.bg-light-gray {
+  background-color: $lightGray;
+}
+.comments {
+  .card {
+    position: relative;
+    img {
+      position: absolute;
+      top: -15%;
+      left: 37%;
+    }
+  }
+}
+
+.team{
+  background-image: url(../../images/bg-simplify-section-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
