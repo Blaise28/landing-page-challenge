@@ -59,3 +59,24 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width:992px) {
+  #offcanvasNavbar{
+    height: max-content;
+    top: 5%;
+    left: 10%;
+    border: 0;
+    background-color: transparent;
+    .offcanvas-body{
+      background-color: $lightGray;
+    }
+  }
+
+  article{
+    .title{
+      background-color: $light;
+      padding: .5rem;
+      border-radius: 4%;
+    }
+  }
+}

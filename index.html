@@ -14,7 +14,8 @@
 
     <title>Landing page</title>
     <link rel="stylesheet" href="./style/dist/style.css" />
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <script src="./app.js" defer></script>
 
     <style>
       .attribution {
@@ -29,7 +30,6 @@
   <body >
     <section class="container">
       <header>
-      <div class="background"></div>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -43,7 +43,7 @@
             aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-            <img src="./images/icon-close.svg" alt="icon" />
+            <img src="./images/icon-hamburger.svg" alt="icon" />
           </button>
           <div
             class="offcanvas offcanvas-end"
@@ -54,12 +54,14 @@
             <div class="offcanvas-header justify-content-end">
               <button
                 type="button"
-                class="btn-close"
+                class="btn"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
-              ></button>
+              >
+              <img src="./images/icon-close.svg" alt="icon" />
+            </button>
             </div>
-            <div class="offcanvas-body d-flex justify-content-evenly align-items-center">
+            <div class="offcanvas-body rounded d-flex justify-content-evenly align-items-lg-center">
               <div class="links">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" >
                   <li class="nav-item">
@@ -81,38 +83,38 @@
               </div>
             </div>
           </div>
-           <div class="d-none d-md-block">
+           <div class="d-none d-lg-block">
                 <button class="btn bg-primary text-light rounded-pill px-4">Get Started</button>
               </div>
         </div>
       </nav>
 
-      <main class="mt-3 row justify-content-between align-items-center mx-2 flex-column-reverse flex-md-column">
+      <main class="mt-3 row justify-content-between align-items-center mx-2 flex-column-reverse flex-lg-row">
 
-        <section class="col-md-5">
-          <h1 class="text-secondary title text-center text-md-start">
+        <section class="col-lg-5">
+          <h1 class="text-secondary title text-center text-lg-start">
             Bring everyone together to build better products.
           </h1>
-          <p class="my-4 col-md-9 text-gray">
+          <p class="my-4 col-lg-9 text-gray">
             Manages makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view
           </p>
-          <div class="text-center text-md-start">
+          <div class="text-center text-lg-start">
             <button class="btn bg-primary text-light rounded-pill px-4">Get Started</button>
           </div>
         </section>
 
-        <section class="col-md-5">
+        <section class="col-lg-5">
           <img src="./images/illustration-intro.svg" class="img-fluid" alt="" srcset="">
         </section>
       </main>
       </header>
 
-      <section class="mt-5 row justify-content-center justify-content-md-between">
+      <section class="mt-5 row justify-content-center justify-content-lg-between">
         <div class="about col-10 col-lg-5">
-          <h2 class="text-secondary text-center text-md-start">
+          <h2 class="text-secondary text-center text-lg-start">
             What's different about Manage?
           </h2>
-          <p class="col-md-9 text-gray text-center text-md-start">
+          <p class="col-lg-9 text-gray text-center text-lg-start">
             Manage provides all the functionnality your team needs,
             without the complexity. Our software is tailor-made digital product teams.
           </p>
@@ -167,7 +169,7 @@
       <h3 class="text-center text-secondary">What they've said</h3>
 
       <div class="row justify-content-around mx-1 mt-5" style="gap: 1rem;">
-        <div class="card col-10 col-lg-3 border-0 bg-light-gray pt-5 mt-5 mt-md-0">
+        <div class="card col-10 col-md-4 col-lg-3 border-0 bg-light-gray pt-5 mt-5 mt-lg-0">
           <div class="profile">
             <img class="img-fluid" style="width: 80px;" src="./images/avatar-anisha.png" alt="profile anisha">
           </div>
@@ -182,7 +184,7 @@
           </div>
         </div>
 
-        <div class="card col-10 col-lg-3 border-0 bg-light-gray pt-5 mt-5 mt-md-0">
+        <div class="card col-10 col-md-4 col-lg-3 border-0 bg-light-gray pt-5 mt-5 mt-lg-0">
           <div class="profile">
             <img class="img-fluid" style="width: 80px;" src="./images/avatar-ali.png" alt="profile ali">
           </div>
@@ -198,7 +200,7 @@
           </div>
         </div>
 
-        <div class="card col-10 col-lg-3 border-0 bg-light-gray pt-5 mt-5 mt-md-0">
+        <div class="card col-10 col-md-4 col-lg-3 border-0 bg-light-gray pt-5 mt-5 mt-lg-0">
           <div class="profile">
             <img  class="img-fluid" style="width: 80px;" src="./images/avatar-richard.png" alt="profile richard">
           </div>
@@ -217,23 +219,27 @@
         <button class="btn bg-primary text-light rounded-pill px-4">Get Started</button>
       </div>
     </section>
+
     <section class="team bg-primary mt-5 p-5 ">
       <div class="row justify-content-around align-items-center">
-        <div class="fw-bold col-md-4 fs-2 text-light text-center text-md-start">
+        <div class="fw-bold col-lg-4 fs-2 text-light text-center text-lg-start">
           Simplify how your team works today.
         </div>
-        <div class="col-md-3 text-center text-md-start mt-3 mt-md-0">
+        <div class="col-lg-3 text-center text-lg-start mt-3 mt-lg-0">
           <button class="btn bg-light text-primary rounded-pill px-4">Get Started</button>
         </div>
       </div>
     </section>
 
-    <footer class="bg-dark py-5">
-      <div class="row container m-auto py-3">
-        <section class="info col-md-3 d-flex flex-column justify-content-between text-center">
-          <div class="logo">
+    <footer class="bg-dark py-3 py-lg-5">
+      <div class="row container m-auto py-3 d-flex flex-column-reverse flex-lg-row">
+        <div class="text-center d-lg-none mt-3">
+          <span class="text-gray">Copyright 2020. All Rights Reserved</span>
+        </div>
+        <section class="info col-lg-3 d-flex justify-content-between text-center d-flex flex-column-reverse flex-lg-column">
+          <div class="logo mt-4 mt-lg-0">
             <a class="" href="#">
-              <img class="img-fluid" src="./images/logo.svg" alt="un logo" />
+              <img class="img-fluid p-2 bg-light-gray rounded" src="./images/logo.svg" alt="un logo" />
             </a>
           </div>
             <div clas="social d-flex">
@@ -257,7 +263,7 @@
             </div>
         </section>
 
-        <section class="links col-md-5 d-flex justify-content-around">
+        <section class="links col-lg-5 d-flex justify-content-around my-4 my-lg-0">
             <ul clas="navLinks" style="margin-bottom: 0;">
               <li class="mb-2"><a href="#" class="text-light">Home</a></li>
               <li class="mb-2"><a href="#" class="text-light">Pricing</a></li>
@@ -272,12 +278,12 @@
             </ul>
         </section>
 
-        <section class="newsLetter col-md-4 d-flex flex-column justify-content-between">
-          <span class="search">
+        <section class="newsLetter col-lg-4 d-flex flex-column justify-content-between">
+          <span class="search text-center text-lg-end">
             <input type="search" name="" id="" class="border-0 round px-3 p-2 rounded-pill" placeholder="Updates in your inbox...">
             <button class="btn btn-primary p-2 px-3 fw-bold rounded-pill text-light">Go</button>
           </span>
-          <div class="text-end">
+          <div class="text-center text-lg-end mt-3 d-none d-lg-block">
             <span class="text-gray">Copyright 2020. All Rights Reserved</span>
           </div>
         </section>
