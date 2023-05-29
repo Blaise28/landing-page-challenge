@@ -10,7 +10,7 @@ $lightGray: hsl(0, 0%, 98%);
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-*{
+* {
   text-decoration: none !important;
   list-style: none !important;
 }
@@ -54,28 +54,35 @@ main {
   }
 }
 
-.team{
+.team {
   background-image: url(../../images/bg-simplify-section-desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width:992px) {
-  #offcanvasNavbar{
+@media screen and (max-width: 992px) {
+  #offcanvasNavbar {
+    position: absolute;
     height: max-content;
     top: 5%;
-    left: 10%;
+    left: 20%;
     border: 0;
     background-color: transparent;
-    .offcanvas-body{
+    .offcanvas-body {
       background-color: $lightGray;
     }
   }
 
-  article{
-    .title{
+  @media screen and (max-width: 450px) {
+    #offcanvasNavbar {
+      left: 2%;
+    }
+  }
+
+  article {
+    .title {
       background-color: $light;
-      padding: .5rem;
+      padding: 0.5rem;
       border-radius: 4%;
     }
   }

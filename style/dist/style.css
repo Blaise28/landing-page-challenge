@@ -11901,15 +11901,23 @@ main .title {
 
 @media screen and (max-width: 992px) {
   #offcanvasNavbar {
+    position: absolute;
     height: max-content;
     top: 5%;
-    left: 10%;
+    left: 20%;
     border: 0;
     background-color: transparent;
   }
   #offcanvasNavbar .offcanvas-body {
     background-color: hsl(0, 0%, 98%);
   }
+}
+@media screen and (max-width: 992px) and (max-width: 450px) {
+  #offcanvasNavbar {
+    left: 2%;
+  }
+}
+@media screen and (max-width: 992px) {
   article .title {
     background-color: hsl(13, 100%, 96%);
     padding: 0.5rem;
